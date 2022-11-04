@@ -1,11 +1,11 @@
-import { useState, useCallback } from "react";
 import * as React from "react";
+import { useCallback, useState } from "react";
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { Colors } from "../../constants/colors";
+import { Place } from "../../models/place";
 import { Button } from "../UI/Button";
 import { ImagePicker } from "./ImagePicker";
 import { LocationPicker } from "./LocationPicker";
-import { Place } from "../../models/place";
 export const PlaceForm = ({ onCreatePlace }) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [selectedImage, setSelectedImage] = useState();

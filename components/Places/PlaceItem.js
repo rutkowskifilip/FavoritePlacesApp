@@ -1,6 +1,6 @@
+import * as React from "react";
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { Colors } from "../../constants/colors";
-import * as React from "react";
 export const PlaceItem = ({ place, onSelect }) => {
   return (
     <Pressable

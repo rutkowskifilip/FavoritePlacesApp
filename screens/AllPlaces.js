@@ -1,6 +1,6 @@
 import { useIsFocused } from "@react-navigation/native";
-import { useEffect, useState } from "react";
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { PlacesList } from "../components/Places/PlacesList";
 import { fetchPlaces } from "../util/database";
 

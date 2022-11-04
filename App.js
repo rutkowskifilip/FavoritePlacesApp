@@ -1,19 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
-import { AllPlaces } from "./screens/AllPlaces";
-import { AddPlace } from "./screens/AddPlace";
-import { Map } from "./screens/Map";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { IconButton } from "./components/UI/IconButton";
 import { Colors } from "./constants/colors";
-import * as SplashScreen from "expo-splash-screen";
+import { AddPlace } from "./screens/AddPlace";
+import { AllPlaces } from "./screens/AllPlaces";
+import { Map } from "./screens/Map";
 
-//import * as React from "react";
 import { useEffect, useState } from "react";
-import { init } from "./util/database";
-import AppLoading from "expo-app-loading";
 import { PlaceDetails } from "./screens/PlaceDetails";
+import { init } from "./util/database";
 const Stack = createNativeStackNavigator();
 export default function App() {
   const [dbInitialized, setDbInitialized] = useState(false);

@@ -1,5 +1,5 @@
-import { PlaceForm } from "../components/Places/PlaceForm";
 import * as React from "react";
+import { PlaceForm } from "../components/Places/PlaceForm";
 import { insertPlace } from "../util/database";
 export const AddPlace = ({ navigation }) => {
   const createPlaceHandler = async (place) => {
